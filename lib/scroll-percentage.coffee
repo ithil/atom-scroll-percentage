@@ -8,7 +8,8 @@ module.exports = ScrollPercentage =
 
   consumeStatusBar: (statusBar) ->
     scrollLabel = document.createElement 'span'
-    scrollLabel.className = 'scroll-percentage';
+    scrollLabel.id = 'scroll-percentage';
+    scrollLabel.className = 'inline-block';
     scrollLabel.textContent = @formatLabel 0
 
     @statusBarTile = statusBar.addRightTile
